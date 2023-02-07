@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Club Auto Le meilleur de l automobile</title>
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="">
+    </head>
+        <body>
+            <header id="mainHeader">
+                <div>
+                    <ul>
+                        <h1>Club Auto</h1>
+                        <li>
+                            <p><img src="icone-adresse.png" alt="icone de l'adresse"> adresse:<br>avenue charles de gaulle<br>75000 paris</p>
+                        </li>
+                        <li>
+                            <p>&#9990; telephone<br> 01 23 45 67 89</p>
+                        </li>
+                        <li>
+                            <p>ouverture : du lundi au samedi<br>horaires : de 9h à 17h</p>
+                        </li>
+                        <li>
+                            <a href="lien twitter de clubauto"><img src="https://img1.freepng.fr/20180626/kpf/kisspng-computer-icons-logo-twitter-icon-5b32b93c9bf2a6.6394419515300508766388.jpg" alt="icone du reseau social twitter" width="5%"></a>
+                            <a href="lien facebook de clubauto"> <img src="https://img1.freepng.fr/20180412/tgq/kisspng-facebook-2018-subaru-crosstrek-social-media-organi-facebook-icon-5acf7eca27c298.4776365015235478501629.jpg" alt="icone du reseau social facebook" width="5%"></a>
+                        </li>    
+                    </ul>
+                </div>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" title="vers la page d'accueil">Accueil</li>
+                        <li><a href="vente.html"title="vers la page vente">Vente</a></li>
+                        <li><a href="location.html"title="vers la page de location">Location</a></li>
+                        <li><a href="contact.html"title="vers la page contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="menuToggle"><img src="" alt="ouvrir/fermer"></button>
+            </header>
+            <section id="pageContent"><!--ici commence la zone du contenu principal de la page-->
+                <main id="leftcol"><!--partie principale zone de resultat de la recherche-->
+                    <div><h1>location</h1></div>
+                    <div>
+                        <label for="priceOrder">Ordre</label>
+                        <select name="priceOrder" id="priceOrder">
+                            <option value="croissant">prix croissant</option>
+                            <option value="décroissant">prix décroissant</option>
+                        </select>  
+                        <ul>
+                            <li>
+                                <a href="vehiculeDetails.html" title="vers la page de decription de la voiture">
+                                    <h2>BMW 535i, Navi, Leather, ABS</h2>
+                                    <img src="/vehicule2.jpg" alt="voiture">
+                                    <span>20&euro;/jour</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolores nihil error numquam porro eos perspiciatis nobis, reprehenderit enim libero?</p>
+                                    <p>>>En savoir plus<<</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vehiculeDetails.html" title="vers la page de decription de la voiture">
+                                    <h2>BMW 535i, Navi, Leather, ABS</h2>
+                                    <img src="/vehicule2.jpg" alt="voiture">
+                                    <span>20&euro;/jour</span>
+                                    <p>Ab delectus voluptatem ex sint cum, modi perspiciatis iusto voluptatum, ea dignissimos vitae. Nulla eveniet minima nam culpa cum explicabo!</p>
+                                    <p>>>En savoir plus<<</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vehiculeDetails.html" title="vers la page de decription de la voiture">
+                                    <h2>BMW 535i, Navi, Leather, ABS</h2>
+                                    <img src="/vehicule2.jpg" alt="voiture">
+                                    <span>20&euro;/jour</span>
+                                    <p>Dicta, delectus exercitationem? Ad repellat et odio dolores necessitatibus quos repudiandae est dolore iure, consectetur placeat. Quam sed eligendi commodi.</p>
+                                    <p>>>En savoir plus<<</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vehiculeDetails.html" title="vers la page de decription de la voiture">
+                                    <h2>BMW 535i, Navi, Leather, ABS</h2>
+                                    <img src="/vehicule2.jpg" alt="voiture">
+                                    <span>20&euro;/jour</span>
+                                    <p>Fugiat nobis voluptatum enim distinctio id iste dolorem itaque pariatur magnam quaerat? Unde voluptatibus beatae ullam odio commodi, delectus exercitationem.</p>
+                                    <p>>>En savoir plus<<</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </main><!--fin de la partie principale ou zone de resultat-->
+                <aside id=""><!--colonne de recherche-->
+                    <section id="locationSearch">
+                        <img src="icone-voiture.png" alt="loupe de recherche"     
+                        <h1>Rechercher</h1>
+                    </section>
+                    <section id="categories">
+                        <form action="/action_page.php"><!--premiere possibilte avec liste -->
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname" dirname="fname.dir">
+                            <input type="submit" value="Submit">
+                          </form>
+                          
+                        <ul><!--deuxieme possibilite-->
+                            <li>
+                                <label for="type">Type</label>
+                                <input type="search" list="type" id="type" name="type" value="Type">
+                                <datalist id="type">
+                                    <option value="citadine">citadine</option>
+                                    <option value="sport">sport</option>
+                                    <option value="break">break</option>
+                                    <option value="utilitaire">utilitaire</option>
+                                </datalist>    
+                            </li> 
+                            <li>
+                                <label for="carburant">Carburant</label>
+                                <select name="Carburant" id="Carburant">
+                                    <option value="diesel">diesel</option>
+                                    <option value="essence">essence</option>
+                                </select>    
+                            </li> 
+                            <li>
+                                <label for="marque">Marque</label>
+                                <select name="marque" id="marque">
+                                    <option value="citadine">citadine</option>
+                                    <option value="sport">sport</option>
+                                    <option value="break">break</option>
+                                    <option value="utilitaire">utilitaire</option>
+                                </select>    
+                            </li> 
+                            <li>
+                                <label for="modele">Modèle</label>
+                                <select name="modele" id="modele">
+                                    <option value="citadine">citadine</option>
+                                    <option value="sport">sport</option>
+                                    <option value="break">break</option>
+                                    <option value="utilitaire">utilitaire</option>    
+                                </select>    
+                            </li>
+                            <li>
+                                <label for="kilometrage">Kilométrage</label>
+                                <select name="kilometrage" id="kilometrage">
+                                    <option value="0-50000">citadine</option>
+                                    <option value="50000-100000">sport</option>
+                                    <option value="100000-200000">break</option>
+                                    <option value=">200000">utilitaire</option>    
+                                </select>    
+                            </li>
+                            <li>
+                                <label for="anciennete">Ancienneté</label>
+                                <select name="anciennete" id="anciennete">
+                                    <option value="citadine">citadine</option>
+                                    <option value="sport">sport</option>
+                                    <option value="break">break</option>
+                                    <option value="utilitaire">utilitaire</option>    
+                                </select>    
+                            </li>
+                            <li>
+                                <label for="prix">Prix</label>
+                                <select name="prix" id="prix">
+                                    <option value="citadine">citadine</option>
+                                    <option value="sport">sport</option>
+                                    <option value="break">break</option>
+                                    <option value="utilitaire">utilitaire</option>    
+                                </select>    
+                            </li>                   
+                        </ul>
+                        <input type="reset" value="reinitialiser">
+                    </section>    
+                </aside><!--fin de la colonne de recherche-->
+            </section>
+            <footer id="mainFooter">
+                <div>
+                    <ul>
+                        <li>
+                            <h2><span style="color:blue">club</span>auto</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sequi, iure delectus iste quas alias accusamus tenetur suscipit eos laborum!</p>
+                        </li>
+                        <li>
+                            <h2>horaire d'ouverture</h2>
+                            <p>Lundi-Samedi : 9h00-17h00</p>
+                            <p>Dimanche et jours fériés : Fermé</p>
+                        </li>
+                        <li>
+                            <h2>newsletter</h2>
+                            <form id="fNewsletter" action="merci.html">
+                                <input type="email" name="email" id="email" required>
+                                <button type="submit">&#64;</button> 
+                            </form>
+                            <p>Inscrivez-vous pour recvoir les dernières offres</p>
+                        </li>
+                        <li>
+                            <h2>reseaux sociaux</h2>
+                            <ul>
+                                <li><img src="" alt="facebook"></li>
+                                <li><img src="" alt="twitter"></li>
+                                <li><img src="" alt="instagram"></li>
+                                <li><img src="" alt="google"></li>
+                                <li><img src="" alt="videoYouTube"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <P>Copyright &#169; Club Auto - Tous droits réservés</P>    
+                </div>
+            </footer>
+        </body>
+</html>
