@@ -2,168 +2,221 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Club Auto Le meilleur de l automobile</title>
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="">
+        <meta name="Description" content="Acheter ou louer un véhicule chez clubauto le meilleur de l'automobile"
+        <title>Club Auto Le meilleur de l automobile Page d'accueil</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/siteAuto.css">
     </head>
         <body>
             <header id="mainHeader">
-                <div>
-                    <ul>
+                <section class="container-fluid px-3 px-md-5"><!-- debut entete principale-->
+                    <div id="firstMainHeader" class="row">
+                        <div class="col-md-3">
                         <h1>Club Auto</h1>
-                        <li>
-                            <p><img src="icone-adresse.png" alt="icone de l'adresse"> adresse:<br>avenue charles de gaulle<br>75000 paris</p>
-                        </li>
-                        <li>
-                            <p>&#9990; telephone<br> 01 23 45 67 89</p>
-                        </li>
-                        <li>
-                            <p>ouverture : du lundi au samedi<br>horaires : de 9h à 17h</p>
-                        </li>
-                        <li>
-                            <a href="lien twitter de clubauto"><img src="https://img1.freepng.fr/20180626/kpf/kisspng-computer-icons-logo-twitter-icon-5b32b93c9bf2a6.6394419515300508766388.jpg" alt="icone du reseau social twitter" width="5%"></a>
-                            <a href="lien facebook de clubauto"> <img src="https://img1.freepng.fr/20180412/tgq/kisspng-facebook-2018-subaru-crosstrek-social-media-organi-facebook-icon-5acf7eca27c298.4776365015235478501629.jpg" alt="icone du reseau social facebook" width="5%"></a>
-                        </li>    
-                    </ul>
-                </div>
-                <nav id="mainNav">
-                    <ul>
-                        <li><a href="index.html" title="vers la page d'accueil">Accueil</li>
-                        <li><a href="vente.html"title="vers la page vente">Vente</a></li>
-                        <li><a href="location.html"title="vers la page de location">Location</a></li>
-                        <li><a href="contact.html"title="vers la page contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <button id="menuToggle"><img src="" alt="ouvrir/fermer"></button>
+                        </div>
+                        <div id="adresse" class="text-uppercase col-md-3 d-none d-md-block">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="/images/icone-adresse.png" alt="icone de l'adresse" id="logoImg">
+                                </div>
+                                <div class="col-10">
+                                    <p>adresse:</p>
+                                    <p>avenue charles de gaulle<br>75000 paris</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="phone" class="col-10 col-md-2">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="/images/icon-telephone.png" alt="icone du telephone" id="logoImg">
+                                </div>
+                                <div class="col-10">
+                                    <h2>téléphone:</h2><p><strong>06 23 45 67 89</strong></p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div id="time" class="col-md-3 d-none d-md-block">
+                            <p>ouverture : Du Lundi au Samedi</p> 
+                            <p>horaires: De 9h à 17h</p>
+                        </div>
+                        <div class="col-1 d-none d-md-block">
+                            <a href="lien twitter de clubauto"><img src="https://img1.freepng.fr/20180626/kpf/kisspng-computer-icons-logo-twitter-icon-5b32b93c9bf2a6.6394419515300508766388.jpg" alt="icone du reseau social twitter" width="5%" id="logoImg"></a>
+                            <a href="lien facebook de clubauto"> <img src="https://img1.freepng.fr/20180412/tgq/kisspng-facebook-2018-subaru-crosstrek-social-media-organi-facebook-icon-5acf7eca27c298.4776365015235478501629.jpg" alt="icone du reseau social facebook" width="5%" id="logoImg"></a>
+                        </div>    
+                    </div>
+                </section><!--fin entete principale-->
+                <section id="mainNav" class="navbar nav-onglet navbar-expand-md justify-content-end"><!-- début menu-->
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                        <nav class="accueil px-3 px-md-5">
+                            <h1 class="accessibility">Menu principal</h1>
+                            <p class="accessibility"><a href="#pageContent" title="acceder directement au menu principal">Passer le menu</a></p>
+                            <ul class="text-uppercase navbar-nav">
+                                <li class="nav-item"><a href="index.html" class="nav-link active" title="vers la page d'accueil">Accueil</a></li>
+                                <li class="nav-item"><a href="vente.html" class="nav-link" title="vers la page vente">Vente</a></li>
+                                <li class="nav-item"><a href="location.html" class="nav-link" title="vers la page de location">Location</a></li>
+                                <li class="nav-item"><a href="contact.html" class="nav-link" title="vers la page contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>  
+                </section><!--fin menu--> 
             </header>
             <section id="pageContent"><!--ici commence la zone du contenu principal de la page-->
-                <main id="leftcol"><!--partie principale zone de resultat de la recherche-->
-                    <div><h1>Vente</h1></div>
-                    <div>
-                        <label for="priceOrder">Ordre</label>
-                        <select name="priceOrder" id="priceOrder">
-                            <option value="croissant">prix croissant</option>
-                            <option value="décroissant">prix décroissant</option>
-                        </select>  
-                        <ul>
-                            <li>
-                                <a href="vehiculeDetails.html">
-                                    <h2>BMW 535i, Navi, Leather, ABS</h2>
-                                    <img src="/vehicule2.jpg" alt="voiture">
-                                    <span>20&euro;/jour</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolores nihil error numquam porro eos perspiciatis nobis, reprehenderit enim libero?</p>
-                                    <p>>>En savoir plus<<</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="vehiculeDetails.html">
-                                    <h2>BMW 535i, Navi, Leather, ABS</h2>
-                                    <img src="/vehicule2.jpg" alt="voiture">
-                                    <span>20&euro;/jour</span>
-                                    <p>Ab delectus voluptatem ex sint cum, modi perspiciatis iusto voluptatum, ea dignissimos vitae. Nulla eveniet minima nam culpa cum explicabo!</p>
-                                    <p>>>En savoir plus<<</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="vehiculeDetails.html">
-                                    <h2>BMW 535i, Navi, Leather, ABS</h2>
-                                    <img src="/vehicule2.jpg" alt="voiture">
-                                    <span>20&euro;/jour</span>
-                                    <p>Dicta, delectus exercitationem? Ad repellat et odio dolores necessitatibus quos repudiandae est dolore iure, consectetur placeat. Quam sed eligendi commodi.</p>
-                                    <p>>>En savoir plus<<</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="vehiculeDetails.html">
-                                    <h2>BMW 535i, Navi, Leather, ABS</h2>
-                                    <img src="/vehicule2.jpg" alt="voiture">
-                                    <span>20&euro;/jour</span>
-                                    <p>Fugiat nobis voluptatum enim distinctio id iste dolorem itaque pariatur magnam quaerat? Unde voluptatibus beatae ullam odio commodi, delectus exercitationem.</p>
-                                    <p>>>En savoir plus<<</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </main><!--fin de la partie principale ou zone de resultat-->
-                <aside id=""><!--colonne de recherche-->
-                    <section id="locationSearch">
-                        <img src="icone-voiture.png" alt="loupe de recherche"     
+                <div>
+                    <img src="/images/vente-location.jpg"
+                    <h1>Vente</h1>
+                </div>
+                <aside id="recherche" class="p-5"><!--colonne de recherche-->
+                    <section id="locationSearch"class="bg-dark text-white">
+                        <img src="/images/icone-voiture.png" alt="loupe de recherche">    
                         <h1>Rechercher</h1>
                     </section>
                     <section id="categories">
-                        <form action="/action_page.php"><!--premiere possibilte avec liste -->
-                            <label for="fname">First name:</label>
-                            <input type="text" id="fname" name="fname" dirname="fname.dir">
-                            <input type="submit" value="Submit">
-                          </form>
-                          
-                        <ul><!--deuxieme possibilite-->
-                            <li>
-                                <label for="type">Type</label>
-                                <input type="search" list="type" id="type" name="type" value="Type">
-                                <datalist id="type">
-                                    <option value="citadine">citadine</option>
-                                    <option value="sport">sport</option>
-                                    <option value="break">break</option>
-                                    <option value="utilitaire">utilitaire</option>
-                                </datalist>    
-                            </li> 
-                            <li>
-                                <label for="carburant">Carburant</label>
-                                <select name="Carburant" id="Carburant">
-                                    <option value="diesel">diesel</option>
-                                    <option value="essence">essence</option>
-                                </select>    
-                            </li> 
-                            <li>
-                                <label for="marque">Marque</label>
-                                <select name="marque" id="marque">
-                                    <option value="citadine">citadine</option>
-                                    <option value="sport">sport</option>
-                                    <option value="break">break</option>
-                                    <option value="utilitaire">utilitaire</option>
-                                </select>    
-                            </li> 
-                            <li>
-                                <label for="modele">Modèle</label>
-                                <select name="modele" id="modele">
-                                    <option value="citadine">citadine</option>
-                                    <option value="sport">sport</option>
-                                    <option value="break">break</option>
-                                    <option value="utilitaire">utilitaire</option>    
-                                </select>    
-                            </li>
-                            <li>
-                                <label for="kilometrage">Kilométrage</label>
-                                <select name="kilometrage" id="kilometrage">
-                                    <option value="0-50000">citadine</option>
-                                    <option value="50000-100000">sport</option>
-                                    <option value="100000-200000">break</option>
-                                    <option value=">200000">utilitaire</option>    
-                                </select>    
-                            </li>
-                            <li>
-                                <label for="anciennete">Ancienneté</label>
-                                <select name="anciennete" id="anciennete">
-                                    <option value="citadine">citadine</option>
-                                    <option value="sport">sport</option>
-                                    <option value="break">break</option>
-                                    <option value="utilitaire">utilitaire</option>    
-                                </select>    
-                            </li>
-                            <li>
-                                <label for="prix">Prix</label>
-                                <select name="prix" id="prix">
-                                    <option value="citadine">citadine</option>
+                        <div class="form-group pt-5 px-5 pb-2">
+                            <select name="type" id="type" class="form-control bg-light">
+                                <option value="0">Type</option>
+                                <option value="Citadine">Citadine</option>
+                                <option value="Sport">Sport</option>
+                                <option value="Break">Break</option>
+                                <option value="Utilitaire">Utilitaire</option>
+                            </select>
+                        </div>
+                        <div class="form-group px-5 py-2">
+                            <select name="carburant" id="carburant" class="form-control bg-light">
+                                <option value="0">Carburant</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="essence">Essence</option>
+                            </select>
+                        </div>
+                        <div class="form-group px-5 py-2">
+                            <select name="marque" id="marque" class="form-control bg-light">
+                                <option value="0">Marque</option>
+                                <option value="Peugeot">Citadine</option>
+                                <option value="Renault">Sport</option>
+                                <option value="Citroën">Break</option>
+                                <option value="BMW">Utilitaire</option>
+                            </select>
+                        </div>
+                        <div class="form-group px-5 py-2">
+                            <select name="modele" id="modele" class="form-control bg-light">
+                                <option value="0">Modèle</option>
+                                <option value="Peugeot">Citadine</option>
+                                <option value="Renault">Sport</option>
+                                <option value="Citroën">Break</option>
+                                <option value="Jaguar">Utilitaire</option>
+                            </select>
+                        </div>
+                        <div class="form-group px-5 py-2">                                       
+                            <select name="kilometrage" id="kilometrage" class="form-control bg-light">
+                                <option value="0">Kilométrage</option>
+                                <option value="0-50000">50000</option>
+                                <option value="100000">100000</option>
+                                <option value="100000-200000">200000</option>
+                                <option value=">200000">plus de 200000</option>    
+                            </select>
+                        </div>    
+                        <div class="form-group px-5 py-2">
+                            <select name="anciennete" id="anciennete" class="form-control bg-light">
+                                <option value="0">Ancienneté</option>
+                                <option value="2000">2000</option>
+                                <option value="2015">2015</option>
+                                <option value="2020">2020</option>    
+                            </select>
+                        </div>    
+                        <div class="px-5 py-2 row">
+                                <select name="prix" id="prix" class="bg-light col-12">
+                                    <option value="0">Prix</option>
                                     <option value="sport">sport</option>
                                     <option value="break">break</option>
                                     <option value="utilitaire">utilitaire</option>    
                                 </select>    
-                            </li>                   
-                        </ul>
-                        <input type="reset" value="reinitialiser">
+                        </div>
+                        <div class="px-5 py-2">
+                            <input type="reset" value="reinitialiser">
+                        </div>
                     </section>    
                 </aside><!--fin de la colonne de recherche-->
+                <main id="leftcol" class="p-2 container-fluid"><!--partie principale zone de resultat de la recherche-->
+                    <div class="form-group row p-3 d-inline-flex">
+                        <div class="col-md-4">
+                            <label for="priceOrder" class="text-uppercase d-none d-md-block">Ordre</label>
+                        </div>
+                        <div class="col-md-8 ">
+                            <select name="priceOrder" id="priceOrder" class="form-control bg-light">
+                            <option value="Croissant">Prix: croissant</option>
+                            <option value="Décroissant">Prix: décroissant</option>
+                        </select>
+                        </div>
+                        
+                    </div>
+                    <hr />
+                    <div class="row"><!--présentation des voitures-->  
+                        <div class="col-md-6">
+                            <a href="/images/vehicule2.jpg" class="text-black">
+                            <img src="/images/vehicule2.jpg" alt="voiture">
+                            <span>20&euro;/jour</span>
+                            </a>
+                        </div>        
+                        <div class="col-md-6">
+                            <a href="/images/vehicule2.jpg" class="text-black">
+                            <h2>BMW 535i, Navi, Leather, ABS</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolores nihil error numquam porro eos perspiciatis nobis, reprehenderit enim libero?</p>
+                            <p>>>En savoir plus<<</p>
+                            </a>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row"><!--présentation des voitures-->  
+                        <div class="col-md-6">
+                            <a href="/images/vehicule2.jpg" class="text-black">
+                            <img src="/images/vehicule2.jpg" alt="voiture">
+                            <span>20&euro;/jour</span>
+                            </a>
+                        </div>        
+                        <div class="col-md-6">
+                            <a href="/images/vehicule2.jpg" class="text-black">
+                            <h2>BMW 535i, Navi, Leather, ABS</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolores nihil error numquam porro eos perspiciatis nobis, reprehenderit enim libero?</p>
+                            <p>>>En savoir plus<<</p>
+                            </a>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row"><!--présentation des voitures-->  
+                        <div class="col-md-6">
+                            <a href="/images/vehicule2.jpg" class="text-black">
+                            <img src="/images/vehicule2.jpg" alt="voiture">
+                            <span>20&euro;/jour</span>
+                            </a>
+                        </div>        
+                        <div class="col-md-6">
+                            <a href="/images/vehicule2.jpg" class="text-black">
+                            <h2>BMW 535i, Navi, Leather, ABS</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolores nihil error numquam porro eos perspiciatis nobis, reprehenderit enim libero?</p>
+                            <p>>>En savoir plus<<</p>
+                            </a>
+                    </div>
+                    <hr />
+                    <div class="row"><!--présentation des voitures-->  
+                        <div class="col-md-6">
+                            <a href="/images/vehicule2.jpg" class="text-black">
+                            <img src="/images/vehicule2.jpg" alt="voiture">
+                            <span>20&euro;/jour</span>
+                            </a>
+                        </div>        
+                        <div class="col-md-6">
+                            <a href="/images/vehicule2.jpg" class="text-black">
+                            <h2>BMW 535i, Navi, Leather, ABS</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolores nihil error numquam porro eos perspiciatis nobis, reprehenderit enim libero?</p>
+                            <p>>>En savoir plus<<</p>
+                            </a>
+                        </div>
+                    </div>
+                    <hr />
+
+                </main><!--fin de la partie principale ou zone de resultat-->
             </section>
             <footer id="mainFooter">
                 <div>

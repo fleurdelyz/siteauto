@@ -16,21 +16,20 @@
 }
 
 #mainHeader {
-    height: 80px;
+    height: 90px;
     width: 100%;
     position: fixed;
     top: 0;
     line-height: 1;
+    font-size: small;
 }
 #mainHeader h1, #mainHeader h2, #mainHeader p, #mainHeader ul {
     margin: 0;
 }
-
-
-#mainNav ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+#firstMainHeader {
+    padding: 10px;
 }
+
 #logoImg {
     width: 30px;
 }
@@ -42,6 +41,7 @@
 }
 #mainNav a:hover {
     background-color: #f78f07;
+    color: white !important;
 }
 
 img {
@@ -68,21 +68,21 @@ article h2 {
 #mainHeader h2 {
     color: var(--orange)
 }
-#mainHeader section, #mainFooter, #presentationDuSite h1, #partieDeux ul {
+#mainNav, #mainHeader section, #mainFooter, #presentationDuSite h1, #vehiculeRecent {
     background-color: var(--black);
+    background-size: 100%;
     color: white;
 }
-
-
 #bienvenue p:first-of-type {
     font-weight: bold;
 }
 #partieDeux {
     background-image: url(/images/vente-location.jpg);
+    background-size: cover;
+    padding: 0;
 }
 #partieDeux #louer, #venteEtLocation {
     background-color: var(--jaune);
-    margin: 40px 0;
 }
 #partieDeux #acheter {
     background-color: var(--rose);
@@ -110,7 +110,7 @@ h3 {
 }
 
 @media screen {
-    .accueil {
+    #mainNav {
         background-image: url(/images/vehicule1.jpg);
         background-repeat: no-repeat;  
         background-position: left top;
