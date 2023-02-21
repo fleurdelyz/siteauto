@@ -11,7 +11,7 @@
             <header id="mainHeader">
                 <section class="container-fluid px-3 px-md-5"><!-- debut entete principale-->
                     <div id="firstMainHeader" class="row">
-                        <div class="col-md-3 d-none d-md-block">
+                        <div class="col-md-3">
                         <h1>Club Auto</h1>
                         </div>
                         <div id="adresse" class="text-uppercase col-md-3 d-none d-md-block">
@@ -44,34 +44,38 @@
                             <a href="lien facebook de clubauto"> <img src="https://img1.freepng.fr/20180412/tgq/kisspng-facebook-2018-subaru-crosstrek-social-media-organi-facebook-icon-5acf7eca27c298.4776365015235478501629.jpg" alt="icone du reseau social facebook" width="5%" id="logoImg"></a>
                         </div>    
                     </div>
-                </section><!--fin entete principale-->
-                <section id="mainNav" class="navbar nav-onglet navbar-expand-md justify-content-end"><!-- début menu-->
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-                        <nav class="accueil px-3 px-md-5">
-                            <h1 class="accessibility">Menu principal</h1>
-                            <p class="accessibility"><a href="#pageContent" title="acceder directement au menu principal">Passer le menu</a></p>
-                            <ul class="text-uppercase navbar-nav">
-                                <li class="nav-item"><a href="index.html" class="nav-link active" title="vers la page d'accueil">Accueil</a></li>
-                                <li class="nav-item"><a href="vente.html" class="nav-link" title="vers la page vente">Vente</a></li>
-                                <li class="nav-item"><a href="location.html" class="nav-link" title="vers la page de location">Location</a></li>
-                                <li class="nav-item"><a href="contact.html" class="nav-link" title="vers la page contact">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>  
-                </section><!--fin menu--> 
-            </header>
+                </section>
+            </header><!--fin entete principale-->
+     
             <section id="pageContent"><!--ici commence la zone du contenu principal de la page-->
-                <div id="presentationDuSite" class="accueil"> 
-                    <h1>club auto <span style="color:darkorange;">le meilleur de l'automobile</span> </h1>
-                </div>
+                <header id="bandeauAccueil"> 
+                    <section id="mainNav" class="navbar nav-onglet navbar-expand-md justify-content-end mt-md-5 position-static"><!-- début menu-->
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                            <nav class="accueil px-3 px-md-5">
+                                <h1 class="accessibility">Menu principal</h1>
+                                <p class="accessibility"><a href="#pageContent" title="acceder directement au menu principal">Passer le menu</a></p>
+                                <ul class="text-uppercase navbar-nav">
+                                    <li class="nav-item"><a href="index.html" class="nav-link active" title="vers la page d'accueil">Accueil</a></li>
+                                    <li class="nav-item"><a href="vente.html" class="nav-link" title="vers la page vente">Vente</a></li>
+                                    <li class="nav-item"><a href="location.html" class="nav-link" title="vers la page de location">Location</a></li>
+                                    <li class="nav-item"><a href="contact.html" class="nav-link" title="vers la page contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>  
+                    </section><!--fin menu--> 
+                    <div id="presentationDuSite" class="accueil"> 
+                        <h1 class="bg-dark">club auto <span style="color: var(--orange);">le meilleur de l'automobile</span></h1>
+                    </div>
+                </header>
+                <main id="">
                 <div id="article" class="container-fluid px-3 px-md-5"><!--début des deux articles--> 
                     <div class="row">
                     <article id="bienvenue" class="col-12 col-md-6"><!--ici commence le premier article-->
                         <img src="/images/clients.jpg" alt="cliente enthousiaste avec vendeur devant une voiture">
-                        <h2>Bienvenue chez <span style="color:darkorange;">Club Auto</span></h2>
+                        <h2>Bienvenue chez <span style="color:var(--orange);">Club Auto</span></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p> ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec porta risus. Etiam ante nunc, mollis a pulvinar ac, fringilla at ante. Suspendisse id tortor at dolor consectetur lobortis. Nullam volutpat ac quam a egestas. In hac habitasse platea dictumst. </p>
                     </article><!--ici se termine le premier article-->
@@ -189,41 +193,38 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nam voluptas neque qui porro odio incidunt libero voluptate cumque officia.</p>
                         </article>
                     </div>
-                </div><!--fin avec photo finale-->                                    
+                </div><!--fin avec photo finale--> 
+                </main>                                   
             </section>
-            <footer id="mainFooter">
-                <div>
-                    <ul>
-                        <li>
-                            <h1><span style="color:blue">club</span>auto</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sequi, iure delectus iste quas alias accusamus tenetur suscipit eos laborum!</p>
-                        </li>
-                        <li>
-                            <h1>horaire d'ouverture</h1>
-                            <p>Lundi-Samedi : 9h00-17h00</p>
-                            <p>Dimanche et jours fériés : Fermé</p>
-                        </li>
-                        <li>
-                            <h1>newsletter</h1>
-                            <form id="fNewsletter" action="merci.html">
-                                <input type="email" name="email" id="email" required>
-                                <button type="submit">&#64;</button> 
-                            </form>
-                            <p>Inscrivez-vous pour recvoir les dernières offres</p>
-                        </li>
-                        <li>
-                            <h1>reseaux sociaux</h1>
-                            <ul>
-                                <li><img src="" alt="facebook" id="logoImg"></li>
-                                <li><img src="" alt="twitter" id="logoImg"></li>
-                                <li><img src="" alt="instagram" id="logoImg"></li>
-                                <li><img src="" alt="google" id="logoImg"></li>
-                                <li><img src="" alt="videoYouTube" id="logoImg"></li>
-                            </ul>
-                        </li>
-                    </ul>
-                <P>Copyright &#169; Club Auto - Tous droits réservés</P>    
+           
+            <footer>
+            <div id="mainFooter">
+                <p class="titre"><span style="color:blue">CLUB</span>AUTO<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sequi, iure delectus iste quas alias accusamus tenetur suscipit eos laborum!</p>
+                <p class="horaire">HORAIRES D'OUVERTURE<br>
+                        Lundi-Samedi : 9h00-17h00<br>
+                        Dimanche et jours fériés : Fermé</p>
+                <div class="newsletter">
+                    <p>NEWSLETTER</p>
+                    <form id="fNewsletter" action="merci.html">
+                        <input type="email" name="email" id="email" required>
+                        <button type="submit">&#64;</button> 
+                    </form>
+                    <p>Inscrivez-vous pour recevoir les dernières offres</p>
                 </div>
+                <div class="reseauxSociaux">
+                    <p>RESEAUX SOCIAUX</p>
+                    <ul>
+                        <li><img src="" alt="facebook" id="logoImg"></li>
+                        <li><img src="" alt="twitter" id="logoImg"></li>
+                        <li><img src="" alt="instagram" id="logoImg"></li>
+                        <li><img src="" alt="google" id="logoImg"></li>
+                        <li><img src="" alt="videoYouTube" id="logoImg"></li>
+                    </ul>
+                </div>
+            </div>
+                    
+                <p>Copyright &#169; Club Auto - Tous droits réservés</p>    
+                
             </footer>
             <script src="/js/jquery-3.6.3.slim.min.js"></script>
             <script src="/js/bootstrap.bundle.min.js"></script>
